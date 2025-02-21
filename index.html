@@ -23,108 +23,176 @@
     </script>
     <title>Top Crypto Twitter (CT) Influencer Wallets of 2025 - Start Trading with Axiom</title>
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/dvm7gqaum/image/upload/v1739671648/thumb-1920-996012_xanv56.jpg">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-        body {
-            font-family: 'Orbitron', sans-serif;
-            background-color: #0d0d0d;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,255,170,0.7);
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #00ffaa;
-            text-shadow: 0 0 10px rgba(0,255,170,0.5);
-        }
-        .influencer {
-            background: rgba(0,255,170,0.1);
-            margin: 20px 0;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid rgba(0,255,170,0.3);
-        }
-        .profile-pic {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 2px solid #00ffaa;
-        }
-        .cta a {
-            background: #00ffaa;
-            color: #0d0d0d;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 20px 0;
-            font-weight: bold;
-        }
-        .json-code {
-            position: relative;
-            margin: 30px 0;
-            padding: 20px;
-            background: rgba(0,20,10,0.9);
-            border: 2px solid #00ffaa;
-            border-radius: 8px;
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        pre {
-            color: #00ffaa;
-            text-align: left;
-            white-space: pre-wrap;
-            margin: 0;
-        }
-        .copy-btn {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: rgba(0,255,170,0.15);
-            color: #00ffaa;
-            border: 2px solid #00ffaa;
-            padding: 10px 25px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-family: 'Orbitron', sans-serif;
-        }
-        .copy-feedback {
-            display: none;
-            color: #00ffaa;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background: rgba(0,0,0,0.7);
-            border-radius: 5px;
-        }
-        footer {
-            margin: 40px 0;
-            padding: 20px;
-            border-top: 1px solid rgba(0,255,170,0.3);
-        }
-        footer a {
-            color: #00ffaa;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: rgba(0,255,170,0.5);
-            border-radius: 4px;
-        }
-    </style>
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,255,170,0.7);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00ffaa;
+  text-shadow: 0 0 10px rgba(0,255,170,0.5);
+}
+
+.influencer {
+  background: rgba(0,255,170,0.1);
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,255,170,0.3);
+  transition: all 0.3s ease;
+}
+
+.influencer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,170,0.5);
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #00ffaa;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.cta a {
+  background: #00ffaa;
+  color: #0d0d0d;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 20px 0;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta a:hover {
+  box-shadow: 0 0 20px rgba(0,255,170,0.7);
+  transform: scale(1.05);
+}
+
+.json-code {
+  position: relative;
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba(0,20,10,0.9);
+  border: 2px solid #00ffaa;
+  border-radius: 8px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+pre {
+  color: #00ffaa;
+  text-align: left;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0,255,170,0.15);
+  color: #00ffaa;
+  border: 2px solid #00ffaa;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(0,255,170,0.3);
+}
+
+.copy-feedback {
+  display: none;
+  color: #00ffaa;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 5px;
+  animation: textGlow 1.5s infinite alternate;
+}
+
+@keyframes textGlow {
+  from { text-shadow: 0 0 5px #00ffaa; }
+  to { text-shadow: 0 0 15px #00ffaa; }
+}
+
+footer {
+  margin: 40px 0;
+  padding: 20px;
+  border-top: 1px solid rgba(0,255,170,0.3);
+}
+
+footer a {
+  color: #00ffaa;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  text-shadow: 0 0 10px #00ffaa;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,255,170,0.5);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  .cta a {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+</style>
 </head>
 <body>
     <header>
